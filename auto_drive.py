@@ -213,7 +213,6 @@
 #     cv2.waitKey(0)
 
 
-from convert import *
 import cv2
 import numpy as np
 import matplotlib.pyplot as plt
@@ -285,8 +284,8 @@ class Image:
 
             print(j)
 
-            path = "./training_img/img_modif/masko" + str(j) + ".jpg", mask;
-            cv2.imwrite(path);
+            path = "./training_img/img_modif/masko" + str(j) + ".jpg";
+            cv2.imwrite(path, mask);
             list_images.append(path)
 
             # i = 1
